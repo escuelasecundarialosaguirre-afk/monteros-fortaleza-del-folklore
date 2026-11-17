@@ -1,284 +1,116 @@
 html,
 body {
     height: 100%;
-    /* Asegura que el body y html ocupen todo el alto de la ventana */
     margin: 0;
-    /* Elimina cualquier margen predeterminado */
     padding: 0;
-    /* Elimina cualquier padding predeterminado */
-    display: flex;
-    flex-direction: column;
     width: 100%;
     overflow-x: hidden;
+
+    background-image: url('../img/monteros.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+/* TÍTULO PRINCIPAL */
+.titulo-principal {
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.titulo-principal h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.titulo-principal p {
+    margin: 5px 0 0;
+    font-size: 1.3rem;
+}
+
+/* CONTENIDO */
+main.container {
+    padding-top: 20px;
+}
+
+/* TARJETAS */
+.card {
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    margin-top: 30px;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 768px) {
+
+    .titulo-principal h1 {
+        font-size: 2.2rem;
+    }
+
+    .titulo-principal p {
+        font-size: 1.1rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}
+/* ORGANIZACIÓN DE LOS PRODUCTOS */
 
 .container {
-    gap: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 0 20px;
+.container .card {
     width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    transition: all 0.3s ease-in-out;
+    max-width: 280px;
 }
 
-.navbar-brand .logo {
-    max-width: 80px;
-    height: auto;
-}
-
-.nav-link {
-    margin: 5px;
-    font-size: 14px;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.text {
-    margin-top: 2%;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
-}
-
-/* Estilo de las cards */
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    /* Ancho fijo para todas las tarjetas */
-    height: 450px;
-    /* Altura fija para todas las tarjetas */
-    margin-bottom: 5%;
-    overflow: hidden;
-    /* Evita desbordamientos */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra para darle un efecto visual */
-}
-
-
-.card-body {
-    text-align: center;
-}
-
-.card .card-image img {
+.container .card img {
     width: 100%;
-    /* Ajusta la imagen al ancho de la tarjeta */
-    height: 200px;
-    /* Mantén la proporción de la imagen */
+    height: 220px;
     object-fit: cover;
-    /* Recorta la imagen si es necesario */
 }
 
-.carousel-item img {
-    width: 100%;
-    /* Ajusta la imagen al ancho de la tarjeta */
-    height: 200px;
-    /* Altura fija para las imágenes */
-    object-fit: cover;
-    /* Recorta la imagen si es más grande, manteniendo el tamaño */
-}
-
-
-.card .card-name {
-    font-size: 24px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.card .card-price {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    display: block;
-    width: 1fr;
-}
-
-.card .card-button {
-    text-align: center;
-    display: block;
-    margin-top: auto;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-}
-
-
-/* Estilo del footer */
-.footer {
-    height: 50px;
-    /* Ajusta la altura del footer según tus necesidades */
-    display: flex;
-    align-items: center;
-    /* Centra verticalmente el contenido del footer */
-    justify-content: center;
-    /* Centra horizontalmente el contenido del footer */
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Fondo blanco semitransparente para mejor legibilidad */
-    width: 100%;
-    /* Asegura que el footer ocupe todo el ancho */
-    position: fixed;
-    /* Fija el footer en la parte inferior */
-    bottom: 0;
-    /* Posiciona el footer en la parte inferior */
-    z-index: 1000;
-    /* Asegura que el footer esté por encima de otros elementos */
-}
-
-.whatsapp-button {
-    position: fixed;
-    /* Fija la posición en la pantalla */
-    bottom: 30px;
-    /* Separa el botón 20px del borde inferior */
-    right: 35px;
-    /* Separa el botón 20px del borde derecho */
-    background-color: #25D366;
-    /* Color de fondo verde de WhatsApp */
-    color: white;
-    /* Color del ícono */
-    border: none;
-    /* Elimina el borde predeterminado del botón */
-    border-radius: 50%;
-    /* Hace que el botón sea circular */
-    width: 60px;
-    /* Ancho del botón */
-    height: 60px;
-    /* Alto del botón */
-    display: flex;
-    /* Utiliza flexbox para centrar el icono */
-    align-items: center;
-    /* Centra verticalmente el icono dentro del botón */
-    justify-content: center;
-    /* Centra horizontalmente el icono dentro del botón */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Añade una sombra */
-    cursor: pointer;
-    /* Cambia el cursor a un puntero al pasar sobre el botón */    
-}
-
-.whatsapp-button:hover {
-    background-color: #1e9e52;
-    /* Cambia el color de fondo cuando el usuario pasa el mouse por encima */
-}
-
-.whatsapp-button i {
-    font-size: 35px;
-    /* Ajusta el tamaño del ícono */
-}
-
-/* Media queries para diferentes tamaños de pantalla */
-@media (max-width: 768px) {
-    .navbar {        
-        font-size: 14px;
-        /* Reduce el tamaño de fuente en pantallas más pequeñas */
-    }
-
-    .nav-link {
-        font-size: 14px;
-        margin: 5px;
-    }
-
-    .logo {
-        max-width: 70px;
-    }
-
-    .footer {
-        height: 50px;
-        /* Reduce la altura del footer en pantallas más pequeñas */
-        font-size: 18px;
-        /* Reduce el tamaño de fuente en pantallas más pequeñas */
-    }
-
-    .card {
-        width: 250px;
-        /* Ajusta el ancho de las cards en pantallas más pequeñas */
-        margin: 12px;
-        /* Espacio entre las cards */
-    }
-
-    .card-img-top {
-        height: 150px;
-        /* Ajusta la altura de las imágenes en pantallas más pequeñas */
-    }
-
+/* En pantallas medianas */
+@media (max-width: 992px) {
     .container {
-        padding: 10px;
-        /* Reduce el padding en pantallas más pequeñas */
-        margin-top: 30%;
-    }
-
-    .whatsapp-button {
-        width: 40px;
-        /* Reduce el ancho del botón en pantallas más pequeñas */
-        height: 40px;
-        /* Reduce el alto del botón en pantallas más pequeñas */
-    }
-
-    .whatsapp-button i {
-        font-size: 18px;
-        /* Reduce el tamaño del ícono en pantallas más pequeñas */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 480px) {
-    .navbar {        
-        font-size: 12px;
-        /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
-    }
-
-    .footer {
-        height: 40px;
-        /* Reduce la altura del footer en pantallas muy pequeñas */
-        font-size: 16px;
-        /* Reduce el tamaño de fuente en pantallas muy pequeñas */
-    }
-
-    .card {
-        width: 200px;
-        /* Ajusta el ancho de las cards en pantallas muy pequeñas */
-        margin: 10px;
-        /* Espacio entre las cards */
-    }
-
-    .card-img-top {
-        height: 120px;
-        /* Ajusta la altura de las imágenes en pantallas muy pequeñas */
-    }
-
+/* En celulares */
+@media (max-width: 576px) {
     .container {
-        padding: 5px;
-        /* Reduce aún más el padding en pantallas muy pequeñas */
-        margin-top: 30%;
+        grid-template-columns: 1fr;
     }
 
-    .whatsapp-button {
-        width: 30px;
-        /* Reduce aún más el ancho del botón en pantallas muy pequeñas */
-        height: 30px;
-        /* Reduce aún más el alto del botón en pantallas muy pequeñas */        
+    .container .card {
+        max-width: 320px;
     }
-
-    .whatsapp-button i {
-        font-size: 16px;
-        /* Reduce aún más el tamaño del ícono en pantallas muy pequeñas */
-    }
+}
+body {
+    padding-top: 90px;
 }

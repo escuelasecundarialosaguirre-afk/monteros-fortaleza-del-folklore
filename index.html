@@ -1,100 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
-  <title>Practicas Profesionalizantes</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+  >
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Monteros - Fortaleza del Folklore</title>
 </head>
 
 <body>
+
+  <!-- Barra de navegación -->
   <div id="navbar-placeholder"></div>
-  <div class="container">
-    <div class="row justify-content-center align-items-center min-vh-100">
-      <!-- Tarjeta 1 -->
-      <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <a href="./card1/card1.html" class="text-decoration-none">
-          <div class="card text-bg-dark" data-bs-toggle="tooltip" title="Click para ir San Miguel de Tucumán">
-            <div class="card-body">
-              <img src="./img/san-miguel.jpg" class="card-img-top" alt="..." />
-              <h5 class="card-title">San Miguel de Tucumán</h5>
-              <p class="card-text">
-                Es la capital de la provincia de Tucumán, en el noroeste de
-                Argentina. La Plaza Independencia...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- Tarjeta 2 -->
-      <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <a href="./card2/card2.html" class="text-decoration-none">
-          <div class="card text-bg-dark" data-bs-toggle="tooltip" title="Click para ir a qué hacer?">
-            <div class="card-body">
-              <img src="./img/tur-avent.jpg" class="card-img-top" alt="..." />
-              <h5 class="card-title">Qué Hacer?</h5>
-              <p class="card-text">
-                Destinos para desestresarse sin salir de la provincia durante
-                todo el año. Paisajes y destinos turísticos...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- Tarjeta 3 -->
-      <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <a href="./card3/card3.html" class="text-decoration-none">
-          <div class="card text-bg-dark" data-bs-toggle="tooltip" title="Click para ir a Gastronomia">
-            <div class="card-body">
-              <img src="./img/SM-Tucuman-gastronomia.jpg" class="card-img-top" alt="..." />
-              <h5 class="card-title">Gastronomia</h5>
-              <p class="card-text">
-                representada con sello propio e inconfundible, que posee como
-                herencia la impronta de la cocina...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
+
+  
+  <!-- Contenido principal -->
+<main class="container">
+
+    <div class="titulo-principal">
+        <h1>MONTEROS</h1>
+        <p>Fortaleza del Folklore</p>
     </div>
-  </div>
+
+   <div class="tarjetas-fondo">
+
+        <div class="row justify-content-center align-items-stretch pt-5">
+
+         <!-- TARJETA 1 -->
+<div class="col-sm-6 col-md-3 mb-4 d-flex justify-content-center">
+
+    <a href="./card1/card1.html"
+       class="text-decoration-none w-100"
+       aria-label="Conocé Monteros">
+
+        <div class="card h-100">
+
+            <img
+                src="./img/imagen%20de%20monteros%20entrada.webp"
+                alt="Vista de la entrada de Monteros"
+                style="display: block; width: 100%; height: 200px; object-fit: cover;"
+            >
+
+            <div class="card-body">
+
+                <h2 class="card-title">
+                    Conocé Monteros
+                </h2>
+
+                <p class="card-text">
+                    Descubrí Monteros, una ciudad del sur tucumano
+                    reconocida como la Fortaleza del Folklore y
+                    Capital Nacional de la Randa.
+                </p>
+
+            </div>
+
+        </div>
+
+    </a>
+
+</div>
+
+      <!-- TARJETA 2 -->
+      <div class="col-sm-6 col-md-3 mb-4 d-flex justify-content-center">
+        <a
+          href="./card2/card2.html"
+          class="text-decoration-none w-100"
+          aria-label="Lugares para visitar en Monteros"
+        >
+          <div
+            class="card h-100"
+            data-bs-toggle="tooltip"
+            title="Lugares para visitar"
+          >
+           <img
+            src="./img/fuente-plaza-Monteros-.jpg"
+            class="card-img-top"
+            alt="Fuente de la plaza principal de Monteros"
+          >
+
+            <div class="card-body">
+              <h2 class="card-title">
+                Lugares para visitar
+              </h2>
+
+              <p class="card-text">
+                Conocé plazas, iglesias, espacios naturales y
+                lugares históricos de Monteros y sus alrededores.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- TARJETA 3 -->
+<div class="col-sm-6 col-md-3 mb-4 d-flex justify-content-center">
+  <a
+    href="./card3/card3.html"
+    class="text-decoration-none w-100"
+    aria-label="Gastronomía y sabores de Monteros"
+  >
+    <div
+      class="card h-100"
+      data-bs-toggle="tooltip"
+      title="Gastronomía y sabores de Monteros"
+    >
+      <img
+        src="./img/sanguche-de-milanesa-tucuman.jpg"
+        class="card-img-top"
+        alt="sanguche de milanesa monterizo"
+      >
+            <div class="card-body">
+            <h2 class="card-title">
+            Gastronomía y sabores de Monteros
+            </h2>
+
+              <p class="card-text">
+              Descubrí los sabores tradicionales de Monteros,
+              sus comidas típicas y las recetas que forman
+              parte de la tradición gastronómica local.
+            </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+        <!-- TARJETA 4 -->
+      <div class="col-sm-6 col-md-3 mb-4 d-flex justify-content-center">
+        <a
+          href="./card4/card4.html"
+          class="text-decoration-none w-100"
+          aria-label="Cultura, arte y tradiciones de Monteros"
+        >
+          <div
+            class="card h-100"
+            data-bs-toggle="tooltip"
+            title="Cultura, arte y tradiciones"
+          >
+            <img
+              src="./img/entrada-gimnasio-municipal-monteros-2.jpg"
+              class="card-img-top"
+              alt="Cultura, arte y tradiciones de Monteros"
+            >
+
+            <div class="card-body">
+              <h2 class="card-title">
+                Cultura, arte y tradiciones
+              </h2>
+
+              <p class="card-text">
+                Conocé las expresiones culturales, artísticas
+                y las historias que forman parte de la identidad
+                y la memoria de Monteros.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    </div>
+    
+  </main>
+
   <!-- Botón de WhatsApp -->
   <div id="whatsapp-placeholder"></div>
-
-  <!-- Footer -->
+  
+  <!-- Pie de página -->
   <footer class="bg-dark text-white text-center py-4">
-    <div>
-      <ul class="list-inline">
-        <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Instagram">
-          <a href="https://www.instagram.com/tucumanturismo" class="text-white " target="_blank">
+    <div class="container">
+
+      <ul class="list-inline mb-2">
+
+        <li
+          class="list-inline-item"
+          data-bs-toggle="tooltip"
+          title="Instagram"
+        >
+          <a
+            href="https://www.instagram.com/tucumanturismo"
+            class="text-white"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram de Tucumán Turismo"
+          >
             <i class="bi bi-instagram fs-2"></i>
           </a>
         </li>
-        <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Facebook">
-          <a href="https://www.facebook.com/tucumanturismo" class="text-white me-3" target="_blank">
+
+        <li
+          class="list-inline-item"
+          data-bs-toggle="tooltip"
+          title="Facebook"
+        >
+          <a
+            href="https://www.facebook.com/tucumanturismo"
+            class="text-white me-3"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook de Tucumán Turismo"
+          >
             <i class="bi bi-facebook fs-2"></i>
           </a>
         </li>
-        <li class="list-inline-item" data-bs-toggle="tooltip" title="Enviar email">
-          <a href="mailto:informes@tucumanturismo.gob.ar" class="text-white me-3">
+
+        <li
+          class="list-inline-item"
+          data-bs-toggle="tooltip"
+          title="Enviar email"
+        >
+          <a
+            href="mailto:informes@tucumanturismo.gob.ar"
+            class="text-white"
+            aria-label="Enviar correo electrónico"
+          >
             <i class="bi bi-envelope fs-2"></i>
           </a>
         </li>
+
       </ul>
-      <p class="name">
-        &copy; 2024 Santiago Di Colantonio. Todos los derechos reservados.
+
+      <p class="mb-0">
+        &copy; 2026 Monteros - Tucumán.
+        Proyecto de Prácticas Profesionalizantes.
       </p>
+
     </div>
   </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- JavaScript propio -->
   <script src="./index.js"></script>
+
 </body>
 
 </html>

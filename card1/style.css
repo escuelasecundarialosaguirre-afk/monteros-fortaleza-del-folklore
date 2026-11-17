@@ -22,7 +22,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 16px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0 20px;
     width: 100%;
@@ -189,4 +189,7 @@ body {
         font-size: 16px;
         /* Reduce aún más el tamaño del ícono en pantallas muy pequeñas */
     }
+}
+#carouselMonteros .carousel-item:nth-child(2) img {
+    max-height: 350px;
 }

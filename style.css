@@ -1,18 +1,20 @@
-/* General settings */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-image: url('./img/Casa-Historica.jpg');
+    width: 100%;
+    overflow-x: hidden;
+
+    background-image: url('./img/foto-bandera-monteros-día.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    width: 100%;
-    overflow-x: hidden;
 }
+/* General settings */
+
 
 /* Navbar */
 .navbar {
@@ -55,31 +57,59 @@ html, body {
     z-index: 1000;
 }
 
+.titulo-principal {
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.titulo-principal h1 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.titulo-principal p {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    color: #f4d35e;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
 /* Cards */
 .card {
-    flex: 1;
-    margin: 20px;
-    max-width: 500px;
-    background-color: white;
+    flex: none;
+    margin: 12px;
+    max-width: 380px;
+    height: 360px;
+    background-color: #e8f3ed;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
     width: 100%;
-    height: 200px;
+    height: 160px;
     object-fit: cover;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
 .card-title {
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
 }
 
 .card-text {
-    font-size: 25px;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 /* WhatsApp Button */
@@ -98,6 +128,7 @@ html, body {
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    z-index: 2000;
 }
 
 .whatsapp-button:hover {
@@ -189,4 +220,41 @@ html, body {
     .whatsapp-button i {
         font-size: 16px;
     }
+}   
+.tarjetas-fondo {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+/* Ajuste de la barra de navegación en páginas internas */
+.navbar-monteros {
+    font-size: 16px;
+}
+
+.navbar-monteros .nav-link {
+    font-size: 14px;
+    margin: 0 2px;
+}
+
+body {
+    padding-top: 80px;
+}
+/* Ajuste final de la barra de navegación */
+
+.navbar-monteros {
+    font-size: 16px !important;
+}
+
+.navbar-monteros .nav-link {
+    font-size: 14px !important;
+    margin: 0 2px !important;
+}
+
+.navbar-monteros .logo-texto strong {
+    font-size: 20px !important;
+}
+
+.navbar-monteros .logo-simbolo {
+    font-size: 32px !important;
 }

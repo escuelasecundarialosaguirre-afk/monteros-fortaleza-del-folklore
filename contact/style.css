@@ -4,7 +4,7 @@ html, body {
     padding: 0; /* Elimina cualquier padding predeterminado */
     display: flex;
     flex-direction: column;
-    background-image: url('../img/Casa-Historica.jpg');
+    background-image: url('../img/iglesia\ y\ calle\ centrica.jpg');
     background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen de fondo */
@@ -36,10 +36,11 @@ body {
 }
 
 /* Estilo del navbar */
+
 .navbar {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 16px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0 20px;
     width: 100%;

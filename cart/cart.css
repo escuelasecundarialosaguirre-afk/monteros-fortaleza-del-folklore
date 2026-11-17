@@ -16,17 +16,9 @@ html, body {
 
 
 /* Estilo del navbar */
-.navbar {
+.cart-page .navbar {
     display: flex;
     align-items: center;
-    font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 0 20px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    transition: all 0.3s ease-in-out;
 }
 
 .navbar-brand .logo {
@@ -295,4 +287,13 @@ tfoot tr {
         font-size: 16px;
         /* Reduce aún más el tamaño del ícono en pantallas muy pequeñas */
     }
+}
+.navbar-monteros {
+    min-height: 70px !important;
+    height: 70px !important;
+}
+
+.navbar-monteros .container-fluid {
+    min-height: 70px !important;
+    height: 70px !important;
 }

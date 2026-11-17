@@ -92,12 +92,59 @@
                 </li>
             </ul>
             <p>
-                &copy; 2024 Santiago Di Colantonio. Todos los derechos reservados.
+                &copy; 2026 Herrera Analia del Valle. Todos los derechos reservados.
             </p>
         </div>
     </footer>
 
     <script src="../index.js"></script>
-</body>
 
+<script>
+fetch('../navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+
+        const links = document.querySelectorAll('#navbar-placeholder .nav-link');
+
+        links.forEach(link => {
+            const texto = link.textContent.trim();
+
+            if (texto === 'Inicio') {
+                link.href = '../index.html';
+            }
+
+            if (texto === 'Conocé Monteros') {
+                link.href = '../card1/card1.html';
+            }
+
+            if (texto === 'Lugares para visitar') {
+                link.href = '../card2/card2.html';
+            }
+
+            if (texto === 'Gastronomía') {
+                link.href = '../card3/card3.html';
+            }
+
+            if (texto === 'Cultura y tradiciones') {
+                link.href = '../card4/card4.html';
+            }
+
+            if (texto === 'Tienda') {
+                link.href = '../store/store.html';
+            }
+
+            if (texto === 'Contacto') {
+                link.href = '../contact/contact.html';
+            }
+
+            if (texto.includes('Carrito')) {
+                link.href = './cart.html';
+            }
+        });
+    })
+    .catch(error => console.error('Error cargando navbar:', error));
+</script>
+
+</body>
 </html>

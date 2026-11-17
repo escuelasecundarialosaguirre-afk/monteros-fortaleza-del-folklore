@@ -1,0 +1,95 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-6 {
+    margin-bottom: 30px;
+}
+
+/* IMÁGENES */
+.img-fixed {
+    width: 100%;
+    max-width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #d4a017;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+/* VENTANAS DE INFORMACIÓN */
+.modal-body {
+    text-align: left;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 10%;
+        margin-top: 15%;
+    }
+
+    .img-fixed {
+        max-width: 300px;
+        height: 300px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 0;
+        margin-top: 30%;
+    }
+
+    .img-fixed {
+        max-width: 150px;
+        height: 150px;
+    }
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/monteros.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+@media (min-width: 769px) {
+    .container .row > div {
+        width: 25% !important;
+        flex: 0 0 25% !important;
+    }
+}
+.titulo-cultural {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}

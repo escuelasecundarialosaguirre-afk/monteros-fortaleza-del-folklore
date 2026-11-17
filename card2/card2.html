@@ -1,108 +1,435 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+  <!-- Estilos propios -->
   <link rel="stylesheet" href="./style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
-  <title>Card 2</title>
+
+  <title>Lugares para visitar - Monteros</title>
 </head>
 
 <body>
+
+  <!-- Barra de navegación -->
   <div id="navbar-placeholder"></div>
-  <div class="container">
-    <!-- Sección 1 -->
-    <div class="row align-items-center my-4">
-      <div class="col-md-6">
-        <img src="../img/card2/plaza-indep.jpg" class="img-fluid" alt="plaza independencia">
-      </div>
-      <div class="datos col-md-6">
-        <h3>Plaza independencia</h3>
-        <p>Ubicada en el centro de la ciudad abarcando aproximadamente una ha, fue enmarcada originalmente en 1685. En
-          sus orígenes cumplió la función de Plaza de Armas hasta que, en 1857, fue transformada en un paseo público y
-          es al día de hoy el más concurrido de la capital tucumana.</p>
-          <a href="https://es.wikipedia.org/wiki/Plaza_Independencia_(Tucum%C3%A1n)" target="_blank" class="btn btn-dark" data-bs-toggle="tooltip" title="Click para ir a la plaza">Conocer más</a>
 
-      </div>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container py-4">
+
+    <!-- TÍTULO -->
+    <div class="text-center mb-5">
+      <h1>Lugares para visitar</h1>
+
+      <p class="lead">
+        Conocé algunos de los lugares y espacios representativos
+        de Monteros, Tucumán.
+      </p>
     </div>
 
-    <!-- Sección 2 -->
-    <div class="row align-items-center my-4">
-      <div class="datos col-md-6">
-        <h3>El Siambón</h3>
-        <p>El Monasterio Cristo Rey, está ubicado en el departamento de Tafí Viejo más precisamente en la localidad de
-          "El Siambón" dentro del circuito Las Yungas, a 64,7 km de la Ciudad de San Miguel de Tucumán.</p>
-          <a href="http://monasteriocristorey.com.ar/" target="_blank" class="btn btn-dark" data-bs-toggle="tooltip" title="Click para ir al Monasterio">Conocer más</a>
-      </div>
-      <div class="col-md-6">
-        <img src="../img/card2/el-siambon.jpg" class="img-fluid" alt="el siambon">
-      </div>
-    </div>
+<!-- 1. MONUMENTO A LA BANDERA -->
 
-    <!-- Sección 3 -->
-    <div class="row align-items-center my-4">
-      <div class="col-md-6">
-        <img src="../img/card2/san-pedro.jpg" class="img-fluid" alt="san pedro">
-      </div>
-      <div class="datos col-md-6">
-        <h3>San Pedro</h3>
-        <p>Es una pequeña ciudad y comuna rural ubicada en el Departamento Trancas, en el noroeste de la provincia de
-          Tucumán, Argentina. Es considerada como la primera villa turística del "Jardín de la República" y es llamada
-          "La Sucursal del Cielo".</p>
-          <a href="https://es.wikipedia.org/wiki/San_Pedro_de_Colalao" target="_blank" class="btn btn-dark" data-bs-toggle="tooltip" title="Click para ir a San Pedro">Conocer más</a>
-      </div>
-    </div>
+<div class="row align-items-center my-5">
 
-    <!-- Sección 4 -->
-    <div class="row align-items-center my-4">
-      <div class="datos col-md-6">
-        <h3>Dique La Angostura</h3>
-        <p>El lago la angostura o embalse La Angostura es un lago artificial, embalse de aguas dulces producido por el
-          dique de La Angostura, ubicado en la provincia argentina de Tucumán. Se encuentra al pie del Cerro Nuñorco, en
-          la margen sur del embalse. Fue construido en la década del 70.</p>
-          <a href="https://es.wikipedia.org/wiki/Lago_El_Mollar" target="_blank" class="btn btn-dark" data-bs-toggle="tooltip" title="Click para ir al Dique">Conocer más</a>
-      </div>
-      <div class="col-md-6">
-        <img src="../img/card2/dique-mollar-tafi.jpg" class="img-fluid" alt="dique langostura">
-      </div>
-    </div>
-
-    <!-- Botón de WhatsApp -->
-    <div id="whatsapp-placeholder"></div>
-
-  <!-- Footer -->
+  <div class="col-md-6 order-md-2">
+    <img
+      src="../img/dia-de-la-bandera-monteros-tucuman.jpg"
+      class="img-fluid rounded shadow"
+      alt="Monumento a la Bandera de Monteros">
   </div>
-  <footer class="bg-dark text-white text-center py-4">
-    <div>
-      <ul class="list-inline">
-        <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Instagram">
-          <a href="https://www.instagram.com/tucumanturismo" class="text-white me-3" target="_blank">
-            <i class="bi bi-instagram fs-2"></i>
-          </a>
-        </li>
-        <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Facebook">
-          <a href="https://www.facebook.com/tucumanturismo" class="text-white me-3" target="_blank">
-            <i class="bi bi-facebook fs-2"></i>
-          </a>
-        </li>
-        <li class="list-inline-item" data-bs-toggle="tooltip" title="Enviar email">
-          <a href="mailto:informes@tucumanturismo.gob.ar" class="text-white me-3">
-            <i class="bi bi-envelope fs-2"></i>
-          </a>
-        </li>
-      </ul>
-      <p>&copy; 2024 Santiago Di Colantonio. Todos los derechos reservados.</p>
+
+  <div class="datos col-md-6 order-md-1">
+
+    <h2>Monumento a la Bandera</h2>
+
+    <p>
+      En el acceso este de Monteros, sobre la Ruta Provincial 325,
+      se encuentra el Monumento a la Bandera, un espacio que forma
+      parte de las celebraciones patrias de la ciudad.
+    </p>
+
+    <p>
+      Cada 20 de junio, Día de la Bandera, este lugar se convierte
+      en escenario de una ceremonia muy especial para la comunidad.
+    </p>
+
+    <p>
+      En este espacio, los alumnos de 4.º grado de las escuelas
+      primarias de Monteros realizan el tradicional Juramento a la
+      Bandera, acompañados por sus docentes, familias y la comunidad.
+    </p>
+
+    <p>
+      Esta ceremonia constituye un momento significativo para los
+      estudiantes y permite mantener viva, año tras año, una tradición
+      vinculada con nuestra identidad y con el legado de Manuel Belgrano.
+    </p>
+
+    <p>
+      El Monumento a la Bandera forma parte así de los espacios de
+      Monteros que reúnen historia, educación, identidad y tradición.
+    </p>
+
+  </div>
+
+</div>
+    <!-- 2. AVENIDA PRINCIPAL -->
+    <div class="row align-items-center my-5">
+
+      <div class="col-md-6">
+        <img
+          src="../img/avenida principal a monteros.jpg"
+          class="img-fluid rounded shadow"
+          alt="Avenida principal de acceso a Monteros">
+      </div>
+
+      <div class="datos col-md-6">
+
+        <h2>Avenida de acceso a Monteros</h2>
+
+        <p>
+          Uno de los primeros lugares que permite conocer la ciudad
+          es su avenida principal de acceso.
+        </p>
+
+        <p>
+          Este espacio forma parte del paisaje urbano de Monteros
+          y constituye una de las vías de ingreso a la ciudad.
+        </p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Monteros+Tucumán"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-dark">
+          Ver ubicación
+        </a>
+
+      </div>
+
     </div>
+
+ <!-- 3. MÁSTIL DE CALLE 25 DE MAYO -->
+
+<div class="row align-items-center my-5">
+
+  <div class="col-md-6">
+    <img
+      src="../img/mastil de calle 25 de mayo.jpg"
+      class="img-fluid rounded shadow"
+      alt="Mástil de calle 25 de Mayo de Monteros">
+  </div>
+
+  <div class="datos col-md-6">
+
+```
+<h2>Mástil de calle 25 de Mayo: un punto de encuentro en la ciudad</h2>
+
+<p>
+  El mástil se encuentra ubicado sobre calle 25 de Mayo y forma
+  parte de uno de los sectores más transitados y concurridos
+  de Monteros.
+</p>
+
+<p>
+  A su izquierda se encuentra la Terminal de Ómnibus de la ciudad,
+  un espacio por donde ingresan y parten colectivos urbanos,
+  interurbanos y de larga distancia, conectando a Monteros con
+  distintas localidades y ciudades.
+</p>
+
+<p>
+  Junto a la terminal también se encuentra el CIC de Mínima,
+  un espacio destinado a la atención y acompañamiento de la
+  comunidad, donde se brindan servicios de asistencia médica
+  y profesionales como psicología, fonoaudiología y nutrición.
+</p>
+
+<p>
+  Otro espacio cercano es el Paseo de la Lectura, un lugar
+  recreativo y de encuentro donde niños, jóvenes y adultos
+  pueden participar de distintas jornadas y actividades,
+  compartir y disfrutar de momentos en comunidad.
+</p>
+
+<p>
+  Hacia la derecha del mástil se encuentra el Parque 28 de Agosto,
+  un espacio pensado para disfrutar al aire libre, con juegos
+  para los más pequeños y lugares donde las familias pueden
+  reunirse, descansar y compartir unos mates.
+</p>
+
+<p>
+  Por su ubicación, el mástil se convierte así en un punto desde
+  el cual se pueden descubrir diferentes espacios que forman parte
+  de la vida cotidiana y comunitaria de Monteros.
+</p>
+
+<a
+  href="https://www.google.com/maps/search/?api=1&query=Calle+25+de+Mayo+Monteros+Tucumán"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="btn btn-dark">
+  Ver ubicación
+</a>
+
+  </div>
+
+  <!-- 4. IGLESIA NUESTRA SEÑORA DEL ROSARIO -->
+    <div class="row align-items-center my-5">
+
+      <div class="col-md-6">
+        <img
+          src="../img/iglesia y calle centrica.jpg"
+          class="img-fluid rounded shadow"
+          alt="Iglesia Nuestra Señora del Rosario de Monteros">
+      </div>
+
+      <div class="datos col-md-6">
+
+        <h2>Iglesia Nuestra Señora del Rosario</h2>
+
+        <p>
+          La Iglesia Nuestra Señora del Rosario es uno de los edificios
+          históricos más destacados de Monteros.
+        </p>
+
+        <p>
+          El templo se encuentra frente a la Plaza Bernabé Aráoz
+          y forma parte del patrimonio cultural y religioso de la ciudad.
+        </p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Iglesia+Nuestra+Señora+del+Rosario+Monteros+Tucumán"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-dark">
+          Ver ubicación
+        </a>
+
+      </div>
+
+    <!-- 5. VIRGEN MARÍA -->
+    <div class="row align-items-center my-5">
+
+      <div class="col-md-6 order-md-2">
+        <img
+          src="../img/patrona de monteros virgen maria.jpg"
+          class="img-fluid rounded shadow"
+          alt="Virgen María, Patrona de Monteros">
+      </div>
+
+      <div class="datos col-md-6 order-md-1">
+
+    <h2>Virgen del Rosario: fe y tradición monteriza</h2>
+
+    <p>
+        La Virgen del Rosario es la Patrona de nuestra querida ciudad de 
+        Monteros y ocupa un lugar muy especial en la vida religiosa y cultural
+        de la comunidad.
+    </p>
+
+    <p>
+        Cada año, el primer domingo de octubre, la ciudad celebra
+        sus Fiestas Patronales en su honor. Es una celebración que
+        reúne a familias y vecinos en un momento de fe, encuentro
+        y tradición.
+    </p>
+
+    <p>
+        En las semanas previas a la Fiesta Patronal, muchos niños
+        viven un momento muy especial al recibir su Primera Comunión
+        en la Iglesia Nuestra Señora del Rosario. Durante la
+        celebración de octubre, esos mismos niños acompañan a la
+        Virgen del Rosario en su tradicional procesión, sumándose
+        a una tradición que se transmite de generación en generación.
+    </p>
+
+    <p>
+        La procesión parte desde la Iglesia Nuestra Señora del Rosario
+        y recorre distintas calles de la ciudad, pasando por calle Rivadavia,
+        avenida Roca y calle 24 de Septiembre hasta llegar a calle Lamadrid.
+        Luego continúa alrededor de la plaza para finalmente regresar
+        a la iglesia.
+    </p>
+
+    <p>
+        Más que una celebración religiosa, esta fiesta representa
+        una tradición muy arraigada que reúne a distintas generaciones
+        y forma parte de la identidad de Monteros.
+    </p>
+
+    <a
+        href="https://www.google.com/maps/search/?api=1&query=Iglesia+Nuestra+Señora+del+Rosario+Monteros+Tucumán"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-dark">
+        Conocer la Iglesia
+    </a>
+
+</div>
+
+</div>
+
+    <!-- 6. PLAZA BERNABÉ ARÁOZ -->
+
+<div class="row align-items-center my-5">
+
+  <div class="col-md-6 order-md-2">
+    <img
+      src="../img/fuente-plaza-Monteros-.jpg"
+      class="img-fluid rounded shadow"
+      alt="Plaza Bernabé Aráoz e Iglesia de Monteros">
+  </div>
+
+  <div class="datos col-md-6 order-md-1">
+
+```
+<h2>Plaza Bernabé Aráoz: el corazón de Monteros</h2>
+
+<p>
+  La Plaza Bernabé Aráoz es uno de los espacios más representativos
+  de Monteros y se encuentra ubicada en el centro de la ciudad.
+  Es un lugar de encuentro para vecinos y visitantes y forma parte
+  del paisaje cotidiano de la comunidad.
+</p>
+
+<p>
+  Rodeada por calles céntricas, la plaza invita a recorrer sus
+  espacios, descansar y disfrutar de un momento al aire libre.
+  A lo largo del año también se convierte en escenario de
+  diferentes actividades, encuentros y celebraciones que reúnen
+  a la comunidad.
+</p>
+
+<p>
+  Frente a la plaza se encuentra la Iglesia Nuestra Señora del
+  Rosario, uno de los edificios históricos y religiosos más
+  importantes de Monteros. Esta cercanía entre la plaza y la
+  iglesia forma parte de una imagen característica del centro
+  de la ciudad.
+</p>
+
+<p>
+  La plaza también permite acercarse a otros espacios y lugares
+  de interés del centro monterizo, convirtiéndose en un punto
+  de partida ideal para comenzar a recorrer y conocer la ciudad.
+</p>
+
+<p>
+  Más que una plaza, la Bernabé Aráoz es un espacio que forma
+  parte de la historia, las tradiciones y la vida cotidiana
+  de Monteros.
+</p>
+
+<a
+  href="https://www.google.com/maps/search/?api=1&query=Plaza+Bernabé+Aráoz+Monteros+Tucumán"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="btn btn-dark">
+  Ver ubicación
+</a>
+```
+
+  </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- WHATSAPP -->
+  <div id="whatsapp-placeholder"></div>
+
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-dark text-white text-center py-4">
+
+    <div class="mb-3">
+
+      <a href="#" class="text-white me-3">
+        <i class="bi bi-facebook"></i>
+      </a>
+
+      <a href="#" class="text-white me-3">
+        <i class="bi bi-instagram"></i>
+      </a>
+
+      <a href="#" class="text-white">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+
+    </div>
+
+    <p class="mb-0">
+      © 2026 Herrera Analia del Valle. Todos los derechos reservados.
+    </p>
+
   </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <!-- JavaScript del proyecto -->
   <script src="../index.js"></script>
+<script>
+fetch('../navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+
+        const links = document.querySelectorAll('#navbar-placeholder .nav-link');
+
+        links.forEach(link => {
+            const texto = link.textContent.trim();
+
+            if (texto === 'Inicio') {
+                link.href = '../index.html';
+            }
+
+            if (texto === 'Conocé Monteros') {
+                link.href = '../card1/card1.html';
+            }
+
+            if (texto === 'Gastronomía') {
+                link.href = '../card3/card3.html';
+            }
+
+            if (texto === 'Cultura y tradiciones') {
+                link.href = '../card4/card4.html';
+            }
+
+            if (texto === 'Tienda') {
+                link.href = '../store/store.html';
+            }
+
+            if (texto === 'Contacto') {
+                link.href = '../contact/contact.html';
+            }
+
+            if (texto.includes('Carrito')) {
+                link.href = '../cart/cart.html';
+            }
+        });
+    })
+    .catch(error => console.error('Error cargando navbar:', error));
+</script>
 </body>
 
 </html>
